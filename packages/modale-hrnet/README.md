@@ -7,11 +7,13 @@
 
 - Use case :
 
+```js
   triggerText: string;
   children: ReactNode;
   validate?: () => boolean;
 
-```js
+
+
 <Modal triggerText="" validate={}>
    {children}
 </Modal>
