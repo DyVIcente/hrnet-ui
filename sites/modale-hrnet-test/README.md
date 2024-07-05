@@ -1,3 +1,24 @@
+# How to use it ?
+
+- Download the package.
+- Download the dependencies ( react, react-dom ).
+- Use this import for the Modal : import { Modal } from "hrnet-components";
+- Import the CSS : import "hrnet-components/style.css"; (I used Tailwindcss in this project.)
+
+- Use case :
+
+```js
+  triggerText: string;
+  children: ReactNode;
+  validate?: () => boolean;
+
+
+
+<Modal triggerText="" validate={}>
+   {children}
+</Modal>
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -17,12 +38,12 @@ If you are developing a production application, we recommend updating the config
 export default {
   // other rules...
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ["./tsconfig.json", "./tsconfig.node.json"],
     tsconfigRootDir: __dirname,
   },
-}
+};
 ```
 
 - Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
